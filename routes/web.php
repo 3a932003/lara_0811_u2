@@ -28,7 +28,7 @@ Route::get('r1', function() {
 });
 Route::get('hello/{name?}', function ($name = 'Everybody'){
     return 'Hello, '.$name;
-});
+})->name('hello.index');
 Route::get('aaa', function (){
     return 'aaa';
 });
